@@ -147,7 +147,7 @@
 
     if (win.Search['postid']) {
         win.Postname = archieve_list[parseInt(win.Search['postid'])-1].post_name;
-        win.location.replace('/posts/?page=0&postname=' + win.Postname);
+        win.location.replace('/posts/?page=0&postname=' + win.Postname+'.html');
     }
     win.TrueSearch = {
         Tags: win.Tags,
