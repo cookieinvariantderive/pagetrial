@@ -196,7 +196,7 @@
         let SideBarTitle = win.createElement('center');
         SideBarTitle.className = 'title';
             let SideBarIcon = win.createElement('img');
-            SideBarIcon.src = 'https://raw.githubusercontent.com/cookieinvariantderive/pagetrial/images/scp-comb.png';
+            SideBarIcon.src = 'https://raw.githubusercontent.com/cookieinvariantderive/pagetrial/main/images/scp-comb.png';
             if (win.isInside) SideBarIcon.src = '/images/scp-comb-2.png';
             SideBarIcon.alt = '';
             SideBarIcon.style = 'width: 120px';
@@ -571,7 +571,7 @@
     ];
     WriteSearchInput = function (data) {
         let InputForm = win.createElement('form');
-        InputForm.action = 'https://raw.githubusercontent.com/cookieinvariantderive/pagetrial/archieve';
+        InputForm.action = 'https://raw.githubusercontent.com/cookieinvariantderive/pagetrial/main/archieve';
         InputForm.method = 'get';
         let InputBody = win.createElement('input');
         InputBody.style = 'float: right;';
