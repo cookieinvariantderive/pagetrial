@@ -250,7 +250,7 @@
             SideBarCon.appendChild(Text);
         }
         write_link('回到首页', '/' + ezylanASearch(win.TrueSearch));
-        write_link('文章一览', '/archieve/' + ezylanASearch(win.TrueSearch));
+        write_link('文章一览', '/archieve/index.html' + ezylanASearch(win.TrueSearch));
         if (win.isInside === 0) {
             write_link('标签一览', '/tags/' + ezylanASearch(win.TrueSearch));
             write_link('一键清除 tag', location.pathname);
