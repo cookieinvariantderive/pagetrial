@@ -147,7 +147,7 @@
 
     if (win.Search['postid']) {
         win.Postname = archieve_list[parseInt(win.Search['postid'])-1].post_name;
-        win.location.replace('/posts/?page=0&postname=' + win.Postname+'.html');
+        win.location.replace('/posts/?page=0&postname=' + win.Postname);
     }
     win.TrueSearch = {
         Tags: win.Tags,
@@ -196,7 +196,7 @@
         let SideBarTitle = win.createElement('center');
         SideBarTitle.className = 'title';
             let SideBarIcon = win.createElement('img');
-            SideBarIcon.src = 'https://cookieinvariantderive.github.io/pagetrial/images/scp-comb.png';
+            SideBarIcon.src = 'file:///E:/workspace-git/remotegithub/others/xYix.github.io/images/scp-comb.png';
             if (win.isInside) SideBarIcon.src = '/images/scp-comb-2.png';
             SideBarIcon.alt = '';
             SideBarIcon.style = 'width: 120px';
@@ -250,7 +250,7 @@
             SideBarCon.appendChild(Text);
         }
         write_link('回到首页', '/' + ezylanASearch(win.TrueSearch));
-        write_link('文章一览', '/archieve/index.html' + ezylanASearch(win.TrueSearch));
+        write_link('文章一览', '/archieve/' + ezylanASearch(win.TrueSearch));
         if (win.isInside === 0) {
             write_link('标签一览', '/tags/' + ezylanASearch(win.TrueSearch));
             write_link('一键清除 tag', location.pathname);
@@ -571,7 +571,7 @@
     ];
     WriteSearchInput = function (data) {
         let InputForm = win.createElement('form');
-        InputForm.action = 'https://cookieinvariantderive.github.io/pagetrial/archieve';
+        InputForm.action = 'file:///E:/workspace-git/remotegithub/others/xYix.github.io/archieve';
         InputForm.method = 'get';
         let InputBody = win.createElement('input');
         InputBody.style = 'float: right;';
